@@ -10,6 +10,6 @@ test('has title', async ({ page }) => {
 
 test('register link opens sign-up page', async ({ page }) => {
     await page.goto('https://parabank.parasoft.com/parabank/index.htm');
-    await page.getByRole('link', { name: 'register' }).click();
+    await page.getByRole('link', { name: 'Register' }).click();
     await expect(page.getByRole('heading', { name: 'Signing up is easy!' })).toBeVisible();
 });
